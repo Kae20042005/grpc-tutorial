@@ -10,7 +10,7 @@ client dan server dapat mengirim stream dari message secara independen, cocok di
 3. * State Management: Menyimpan koneksi aktif pengguna. 
    * Backpressure: Mengelola aliran data agar tidak overload. 
    * Error Propagation: Tangani error sisi klien/server secara terpisah.
-4. Kelebihan & Kekurangan ReceiverStream<br>
+4.
 |Kelebihan|Kekurangan|
 |---------|----------|
 |Mudah digunakan dengan channel async|Tidak ada pengaturan buffering otomatis|
@@ -23,13 +23,13 @@ client dan server dapat mengirim stream dari message secara independen, cocok di
 6. * Penambahan validasi input
    * Penyimpanan data ke database
    * Pencatatan log
-7. Pengaruh gPRC terhadap arsitektur sistem terdistribusi
+7.
 |Kelebihan|Kekurangan|
 |---------|----------|
 |Dukungan multi-bahasa via Protobuf|Tidak semudah REST dalam debugging|
 |Performa tinggi & dukungan streaming|Perlu tool tambahan|
 |Kontrak API eksplisit & kuat dari `.proto`|Dukungan langsung dari browser terbatas (perlu gPRC-Web)|
-8. Perbandingan HTTP/2, Http/1.1, Websocket
+8.
 |Protokol|Kelebihan|Kekurangan|
 |--------|---------|----------|
 |HTTP/2|Multiplexing, efisiensi tinggi|Lebih kompleks|
@@ -38,7 +38,7 @@ client dan server dapat mengirim stream dari message secara independen, cocok di
 9. Metode request-response dalam REST tidak berjalan secara realtime di mana pertama request diberikan lalu ada response
 sebagai balasan. Sedangkan pada metode bidirectional streaming dalam gRPC, komunikasi dapat berjalan secara dua arah dan
 komunikasi terjadi secara real-time.
-10. Perbandingan schema-based gRPC dengan schema-less JSON dalam REST API
+10.
 |gRPC (protobuf)|REST (JSON)|
 |---------------|-----------|
 |Tipe data ketat & validasi otomatis|Fleksibel dan mudah diuji secara manual|
